@@ -3,13 +3,13 @@ Config = Config or {}
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
 
 Config.AvailableJobs = {                                     -- Only used when not using qb-jobs.
-    ['trucker'] = { ['label'] = 'Trucker', ['isManaged'] = false },
+    ['trucker'] = { ['label'] = 'Camionneur', ['isManaged'] = false },
     ['taxi'] = { ['label'] = 'Taxi', ['isManaged'] = false },
-    ['tow'] = { ['label'] = 'Tow Truck', ['isManaged'] = false },
-    ['reporter'] = { ['label'] = 'News Reporter', ['isManaged'] = false },
-    ['garbage'] = { ['label'] = 'Garbage Collector', ['isManaged'] = false },
-    ['bus'] = { ['label'] = 'Bus Driver', ['isManaged'] = false },
-    ['hotdog'] = { ['label'] = 'Hot Dog Stand', ['isManaged'] = false }
+    ['tow'] = { ['label'] = 'Remorqueur', ['isManaged'] = false },
+    ['reporter'] = { ['label'] = 'Journaliste', ['isManaged'] = false },
+    ['garbage'] = { ['label'] = 'Eboueur', ['isManaged'] = false },
+    ['bus'] = { ['label'] = 'Chauffeur de Bus', ['isManaged'] = false },
+    ['hotdog'] = { ['label'] = 'Vendeur de Hot Dog', ['isManaged'] = false }
 }
 
 Config.Cityhalls = {
@@ -21,21 +21,21 @@ Config.Cityhalls = {
             display = 4,
             scale = 0.65,
             colour = 0,
-            title = 'City Services'
+            title = 'Mairie'
         },
         licenses = {
             ['id_card'] = {
-                label = 'ID Card',
+                label = 'Carte d\'Identité',
                 cost = 50,
             },
             ['driver_license'] = {
-                label = 'Driver License',
+                label = 'Permis de Conduire',
                 cost = 50,
                 metadata = 'driver'
             },
             ['weaponlicense'] = {
-                label = 'Weapon License',
-                cost = 50,
+                label = 'Permis de Port d\'Arme',
+                cost = 100,
                 metadata = 'weapon'
             },
         }
@@ -45,7 +45,7 @@ Config.Cityhalls = {
 Config.DrivingSchools = {
     { -- Driving School 1
         coords = vec3(240.3, -1379.89, 33.74),
-        showBlip = true,
+        showBlip = false,
         blipData = {
             sprite = 225,
             display = 4,
@@ -54,9 +54,8 @@ Config.DrivingSchools = {
             title = 'Driving School'
         },
         instructors = {
-            'DJD56142',
-            'DXT09752',
-            'SRI85140',
+            'IGX93624', -- Emilio (Vitto)
+            --"",
         }
     },
 }
