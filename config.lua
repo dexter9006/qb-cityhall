@@ -4,7 +4,7 @@ Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target in
 
 Config.AvailableJobs = {                                     -- Only used when not using qb-jobs.
     ['trucker'] = { ['label'] = 'Camionneur', ['isManaged'] = false },
-    ['taxi'] = { ['label'] = 'Taxi', ['isManaged'] = false },
+    ['taxi'] = { ['label'] = 'Chauffeur de Taxi', ['isManaged'] = false },
     ['tow'] = { ['label'] = 'Remorqueur', ['isManaged'] = false },
     ['reporter'] = { ['label'] = 'Journaliste', ['isManaged'] = false },
     ['garbage'] = { ['label'] = 'Eboueur', ['isManaged'] = false },
